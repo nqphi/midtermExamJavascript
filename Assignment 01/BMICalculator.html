@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="BMICalculator.js"></script>
+  <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="container-fluid text-light">
+        <div class="container py-5"  style="background: #117a8b;">
+            <h4 class="text-warning text-center"><b>BMI CALCULATOR</b></h1>
+            <div class="pb-3 pt-3">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="height">Chiều cao (cm): <span id="height-validate" class="text-danger"></span></label>
+                    <input type="number" class="form-control" placeholder="Vui lòng nhập chiều cao" id="height" required>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="weight">Nặng (kg):</label>
+                    <input type="number" class="form-control" placeholder="Vui lòng nhập cân nặng" id="weight" required>
+                  </div>
+                </div>
+              </div>
+
+              
+              
+                <button type="submit" class="btn btn-danger" onclick="tinhtoan()">Tính toán</button>
+            </div>
+            <hr class="bg-light">
+            <div class="pt-3 ">
+            <h2>BMI: <span id="result" class="text-warning">_</span></h2>
+            <h3>Phân loại: <span id="phanloai" class="text-warning">_</span></h3> 
+            <h3>Nguy cơ phát triển bệnh: <span id="canhbao" class="text-warning">_</span></h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

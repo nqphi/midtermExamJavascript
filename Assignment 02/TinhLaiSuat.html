@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="chuongtrinhtinhlaisuat.js"></script>
+  <title>CHƯƠNG TRÌNH TÍNH LÃI SUẤT</title>
+</head>
+<body>
+  <div class="container-fluid text-light">
+    <div class="container" style="background: #117a8b;">
+      <div class="col py-5">
+        <h3 class="text-center text-warning"><b>CHƯƠNG TRÌNH TÍNH LÃI SUẤT</b></h3>
+        <form class="pb-3 pt-3" action="javascript:;" onsubmit="tinhLaiSuat()">
+           <div class="row">
+              <div class="col-6">
+                  <div class="form-group">
+                    <label for="tienVay">Số tiền vay: </label>
+                    <input type="number" value="" class="form-control" placeholder="Số tiền cần vay (VND)" id="tienVay" required min="1000000">
+                  </div>
+                  <div class="form-group">
+                    <label for="thoiHan">Thời hạn cho vay:</label>
+                    <input type="number" class="form-control" placeholder="Vay trong bao nhiêu tháng" id="thoiHan" required min="1">
+                  </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="laiSuat">Lãi suất:</label>
+                  <input type="number" class="form-control" placeholder="Lãi suất bao nhiêu %/năm" id="laiSuat" required min="0">
+                </div>
+                <div class="form-group">          
+                  <label for="ngayGiaiNgan">Ngày giải ngân:</label>
+                  <input type="date" class="form-control" id="ngayGiaiNgan" required>
+                </div>
+              </div>
+            </div>
+           
+            <button type="submit" class="btn btn-danger">Tính toán</button>
+        </form>
+        <div class="py-3 ">
+          <div class="table-responsive">          
+            <table class="table text-light" id="bangtinhlaisuat">
+              <thead>
+                <tr>
+                  <th colspan="2">Kì trả nợ</th>
+                  <th>Số gốc còn lại</th>
+                  <th>Gốc hàng tháng</th>
+                  <th>Lãi hàng tháng</th>
+                  <th>Tổng (gốc + lãi)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>_</td>
+                  <td>_</td>
+                  <td>_</td>
+                  <td>_</td>
+                  <td>_</td>
+                  <td>_</td>
+                </tr>
+              </tbody>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
